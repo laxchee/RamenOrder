@@ -1,0 +1,256 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 100px;
+	line-height: 20px;
+	position: relative;
+	background: url(../images/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-family: "AvantGarde Bk BT";
+}
+
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+	float: none;
+}
+
+.row{
+	width: 100%;
+	clear: both;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.logo-holder{
+	padding:40px 0 0 0 ;
+}
+
+#orderHolder{
+	top: 90px;
+	right: 0px;
+	width: 300px;
+	overflow: hidden;
+	position: fixed;
+	pointer-events: none;
+	z-index: 10;
+}
+
+#orderName{
+	width: 250px;
+	margin-left: 300px;
+	padding: 20px;
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+	background-color: #873533;
+}
+
+.order-listing{
+	bottom: 0px;
+	left: -55px;
+	width: 440px;
+	height: 540px;
+	position: fixed;
+	background: url(../images/order_list.png) no-repeat;
+	transform:rotate(-7deg);
+	-ms-transform:rotate(-7deg); /* IE 9 */
+	-webkit-transform:rotate(-7deg); /* Opera, Chrome, and Safari */
+}
+
+.input-fills{
+	width: 270px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	background: #f7eee7;
+	border: solid 1px #873533;
+	padding: 10px 0;
+}
+
+input[type="text"]{
+    font-size:15px;
+}
+
+.name-postion{
+	margin-top: 146px;
+}
+
+.soup-postion{
+	margin-top: 55px;
+}
+
+.noodles-postion{
+	margin-top: 55px;
+}
+
+.take-postion{
+	margin-top: 40px;
+}
+
+.submit{
+	height: 45px;
+	width: 213px;
+	margin-top: 27px;
+	border: none;
+	cursor: pointer;
+	background: transparent;
+
+}
+
+select{
+	padding: 0 95px !important;
+	height: 35px !important;
+	-webkit-appearance: none;
+}
+
+.content-holder{
+	width: 73%;
+	padding: 40px;
+	margin-top: 20px;
+	border-radius: 5px;
+	min-height: 460px;
+	background-image: url(../images/tran.png);
+}
+
+.listing{
+	width: 75%;
+	padding: 0px;
+	margin: 0px;
+	padding: 0 120px;
+	text-align: center;
+}
+
+.order{
+	width: 202px;
+	height: 279px;
+	margin: 10px 10px 0 0;
+	font-size: 15px;
+	display: inline-block;
+	color: white;
+	position: relative;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	background: url(../images/card-slot.png) no-repeat;
+}
+
+.lightbox{
+	position: absolute;
+	z-index: 5px;
+	top: 5px;
+	left: 5px;
+	width: 192px;
+	height: 269px;
+	border-radius: 10px;
+	display: none;
+	background: url(../images/trans.png);
+}
+
+.order:hover .lightbox{
+	display: block;
+}
+
+.edit{
+	width: 150px;
+	margin: 0 auto;
+	padding: 5px 0;
+	font-style: 15px;
+	border-radius: 10px;
+	border: 3px solid white;
+	margin-top: 40px;
+}
+.edit:hover{
+	background-color: #883432;
+}
+
+.order p{
+	width: 100%;
+	text-align: center;
+	font-weight: 300;
+}
+
+.orderNum{
+	font-size: 35px;
+	margin-top: 60px;
+}
+#orderList{
+	position: relative;
+}
+#orderList li{
+	cursor: pointer;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+}
+
+.closing{
+	display: none;
+	position: absolute;
+	right: 87px;
+	bottom: 20px;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+	margin-right: -20px;
+	border-radius: 10px;
+	background-color: #883432;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+
+.slide {
+	-webkit-animation: opic 1s ;
+	-moz-animation: opic 1s ;
+	animation: opic 1s ;
+}
+
+@-webkit-keyframes opic {
+	0% {left: -500px;}
+	100% {left: -55px;}
+}
+
+.fadeIn {
+	-webkit-animation: fadeIn 2s ;
+	-moz-animation: fadeIn 2s ;
+	animation: fadeIn 2s ;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.flip {
+	-webkit-animation: flip 1s ;
+	-moz-animation: flip 1s ;
+	animation: flip 1s ;
+}
+
+@-webkit-keyframes flip {
+	0% {-webkit-transform: rotateY(90deg);}
+	100% {-webkit-transform: rotateY(0deg);}
+}
+
+
+
+
